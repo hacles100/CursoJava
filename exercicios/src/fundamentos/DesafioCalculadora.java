@@ -15,19 +15,19 @@ public class DesafioCalculadora {
 		Scanner entrada =  new Scanner(System.in);
 		
 		System.out.println("Insira o primeiro numero:");
-		int num1 = entrada.nextInt();
+		double num1 = entrada.nextDouble();
 		
 		System.out.println("Insira o segundo numero: ");
-		int num2 = entrada.nextInt();
+		double num2 = entrada.nextDouble();
 		
 		System.out.println("Insira a operacão:");
 		char op = entrada.next().charAt(0);
 		
-		int resultado = (op == '+' ) ? num1 + num2 :
-			            (op == '-') ? num1 - num2 :
-			            (op == '*') ? num1 * num2 :
-			            (op == '/') ? num1 / num2 :
-			            (op == '%') ? num1 % num2 : 0;
+		double resultado = (op == '+' ) ? num1 + num2 :
+			               (op == '-') ? num1 - num2 :
+			               (op == '*') ? num1 * num2 :
+			               (op == '/') ? num1 / num2 :
+			               (op == '%') ? num1 % num2 : 0;
 		
 		System.out.println("Resultado: " + resultado);
 	
