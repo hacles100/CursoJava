@@ -7,20 +7,18 @@ public class Exercicio3 {
 	public static void main(String[] args) {
 		//Criar um programa que leia o peso e a altura do usuário e imprima no console o IMC.
 		
-Scanner scanner = new Scanner(System.in);
+		Scanner entrada = new Scanner(System.in);
 		
-		System.out.println("Digite o peso:");
-		double peso = scanner.nextDouble();
+		System.out.println("Insira o seu peso: ");
+		double peso = entrada.nextDouble();
 		
-		System.out.println("Digite a altura:");
-		double altura = scanner.nextDouble();
+		System.out.println("Insira sua altura: ");
+		double altura = entrada.nextDouble();
 		
-		double imc = peso / ( altura * altura );
+		double IMC = peso / (altura * altura);
 		
-		System.out.print("IMC: " + imc);
+		System.out.println("O seu IMC é de: " + IMC);
 		
-		scanner.close();
-		
-		
+		entrada.close();
 	}
 }
