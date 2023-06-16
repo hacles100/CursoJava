@@ -16,5 +16,7 @@ public class IfElse {
 		}else {
 			System.out.printf("%d é um numero ímpar! ", numero);
 		}
+		
+		entrada.close();
 	}
 }
